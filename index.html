@@ -53,6 +53,7 @@
                 height		: 500px;
                 font-size	: 15px;
                 line-height: 200px;
+                background-color: rgba(255,255,255,.7);
             }
 
             .pie text {
@@ -72,61 +73,147 @@
 
         <div class="reveal">
             <div class="slides">
-                <section data-background="images/cover_bg.jpg">
+                <style>
+                    .i-wrap
+                    {
+                        text-align: left;
+                    }
+                        
+                    .i-text
+                    {
+                        font-family: "Russo One", Impact, sans-serif;
+                        text-transform: uppercase;
+                        color: #ecf0f1;
+                        background: #3498db;
+                        padding: 20px 20px;
+                        font-size: 42pt !important;
+                        line-height: 48pt !important;
+                    }
+
+                    .primary-text
+                    {
+                        color: #2ecc71;
+                    }
+                </style>
+
+                <section data-background="images/cover_two_bg.jpg">
                     <h1>IGROFY</h1>
                     <p>Александр Плесовских</p>
                 </section>
 
+                <section data-background="images/engine_bg.jpg">
+                    <div class="i-wrap">
+                        <span class="i-text">Люди — ключевой<br/>элемент механизма</span>
+                    </div>
+                </section>
+
+                <section data-background="images/generation-y_bg.jpg">
+                    <div class="i-wrap">
+                        <span class="i-text">Нужен новый<br>подход</span>
+                    </div>
+                </section>
+
+                <section data-background="images/gamification_bg.jpg">
+                    <div class="i-wrap">
+                        <span class="i-text"><span class="primary-text">40%</span> компаний из списка <span class="primary-text">FORTUNE</span> уже используют <span class="primary-text">игрофикацию</span></span>
+                    </div>
+                </section>
+
                 <section data-background="images/callcenter-mts_bg.jpg">
-                    <h2 class="fragment">Операторы могут работать еще лучше</h2>
+                    <div class="i-wrap">
+                        <span class="i-text">Для колл-центров остро стоит проблема вовлеченности</span>
+                    </div>
+                </section>
+                
+                <section data-background="images/black_bg.jpg">
+                    <img src="images/schema-before.svg" alt="">
                 </section>
 
                 <section data-background="images/main_bg.jpg">
+                    <img src="images/schema-after.svg" alt="">
+                </section>
+
+
+                <section data-background="images/market_all.jpg" data-state="pie-2">
+                    <p>Российский рынок</p>
+                    <div class="pie" id="pie-2"></div>
+                </section>
+                
+                <section data-background="images/market_rus.jpg" data-state="pie-1">
+                    <p>Мировой рынок</p>
+                    <div class="pie" id="pie-1"></div>
+                </section>
+
+                <section data-background="images/main_bg.jpg">
+                    <img src="images/product.png"/>
+                </section>
+
+<!--                 <section data-background="images/main_bg.jpg">
                     <style>
-                        .wrapper
-                        {
-                            padding: 20px 0 0 !important;
-                            font-size: 0;
-                            letter-spacing: 0;
-                            word-spacing: 0;
-                            vertical-align: top;
-                        }
-
-                        .igrofy-module
-                        {
-                            display: table-cell;
-                            width: 200px;
-                            height: 200px;
-                            vertical-align: top;
-                            border-radius: 50%;
-                        }
-                        
-                        .igrofy-module p
-                        {
-                            margin: 0 10px;
-                            background: none;
-                        }
-
-                        .wrapper .igrofy-module
-                        {
-                            font-size: 0.6em;
-                            letter-spacing: 1px;
-                            word-spacing: .1em;
-                            line-height: 0.6em;
-                            vertical-align: middle;
-                            text-align: center;
-                        }
-
-                        .wrapper__inner {
-                            display: inline-block;
-                        }
+                      .product-item
+                      {
+                        width: 250px;
+                        display: inline-block;
+                        vertical-align: top;
+                      }
+                      .product-wrap
+                      {
+                        padding: 20px 0 0 !important;
+                        font-size: 0;
+                        letter-spacing: 0;
+                        word-spacing: 0;
+                      }
+                      .product-wrap .product-item
+                      {
+                        display: inline-block;
+                        font-size: 0.8em;
+                        letter-spacing: 1px;
+                        word-spacing: .1em;
+                        line-height: 10px;
+                        vertical-align: top;
+                      }
                     </style>
-                    <div class="wrapper">
-                        <div class="wrapper__inner">
-                            <div class="igrofy-module" style="background: #2ecc71"><p>Обучение</p></div>
-                            <div class="igrofy-module" style="background: #f1c40f"><p>Поощрение</p></div>
-                            <div class="igrofy-module" style="background: #e74c3c"><p>Соперничество</p></div>
-                            <div class="igrofy-module" style="background: #3498db"><p>Социальные коммуникации</p></div>
+                    <div class="product-wrap">
+                        <div class="product-item"><img src="images/product-edu.svg" alt=""></div>
+                        <div class="product-item"><img src="images/product-social.svg" alt=""></div>
+                        <div class="product-item"><img src="images/product-leader.svg" alt=""></div>
+                        <div class="product-item"><img src="images/product_progres.svg" alt=""></div>
+                    </div>
+                </section> -->
+
+                <section data-background="images/main_bg.jpg">
+                <style>
+                  .rival
+                  {
+                    width: 250px;
+                    display: inline-block;
+                    vertical-align: top;
+                  }
+                  .rival-wrap
+                  {
+                    padding: 20px 0 0 !important;
+                    font-size: 0;
+                    letter-spacing: 0;
+                    word-spacing: 0;
+                  }
+                  .rival-wrap .rival
+                  {
+                    display: inline-block;
+                    font-size: 0.8em;
+                    letter-spacing: 1px;
+                    word-spacing: .1em;
+                    line-height: 10px;
+                    vertical-align: top;
+                  }
+                </style>
+                    <p>Конкуренты</p>
+                    <div class="rival-wrap">
+                        <!-- <span class="i-text">Конкуренты</span> -->
+                        <div class="rival">
+                            <img src="images/pryaniki-logo.png"/>
+                        </div>
+                        <div class="rival">
+                            <img src="images/playvox-logo.png"/>
                         </div>
                     </div>
                 </section>
@@ -177,21 +264,13 @@
                   </div>
                 </section>
 
-                <section data-background="images/scrooge_bg.jpg">
-                    <h2 class="fragment">Экономическая выгода</h2>
-                </section>
-
-                <section data-state="pie-1">
-                    <div class="pie" id="pie-1"></div>
-                </section>
-
-                <section data-state="pie-2">
-                    <div class="pie" id="pie-2"></div>
+                <section data-background="images/mts_bg.jpg">
+                    <!-- <h2 class="fragment">Экономическая выгода</h2> -->
                 </section>
 
                 <section data-background="images/friends_bg.jpg">
-                    <h2 class="fragment">Давайте дружить!</h2>
-                    <p class="fragment">contact@igrofy.com</p>
+                  <h2 class="fragment" style="margin-top: 400px;">Давайте дружить!</h2>
+                  <p class="fragment">contact@igrofy.com</p>
                 </section>
             </div>
         </div>
@@ -244,7 +323,7 @@
                         {"country": 'Другие', "part": 14},
                         {"country": 'Телемаркетинг', "part": 29},
                         {"country": 'Банки', "part": 41},
-                        {"country": 'Прямые продажи', "part": 7},
+                        {"country": 'Прямые продажи', "part": 7}
                     ],
                     "valueField": "part",
                     "titleField": "country",

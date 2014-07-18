@@ -2,10 +2,28 @@
 <project version="4">
   <component name="ChangeListManager">
     <list default="true" id="ad60cabc-5a9f-4c4d-8550-12e3626590aa" name="Default" comment="">
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/lib/js/armcharts/armchart.js" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/lib/js/armcharts/themes/light.js" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/lib/js/armcharts/pie.js" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/images/black_bg.jpg" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/images/cover_bg.jpg" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/images/cover_two_bg.jpg" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/images/engine_bg.jpg" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/images/gamification_bg.jpg" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/images/generation-y_bg.jpg" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/images/mac-mockup.png" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/images/market_all.jpg" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/images/market_rus.jpg" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/images/mts_bg.jpg" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/images/playvox-logo.png" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/images/product.png" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/images/pryaniki-logo.png" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/images/product-edu.svg" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/images/product-leader.svg" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/images/product-social.svg" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/images/product_progres.svg" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/images/schema-after.svg" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/images/schema-before.svg" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/css/theme/custom.css" afterPath="$PROJECT_DIR$/css/theme/custom.css" />
       <change type="MODIFICATION" beforePath="$PROJECT_DIR$/index.html" afterPath="$PROJECT_DIR$/index.html" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/.idea/workspace.xml" afterPath="$PROJECT_DIR$/.idea/workspace.xml" />
     </list>
     <ignored path="presentation-accelerationti-mts.iws" />
     <ignored path=".idea/workspace.xml" />
@@ -31,9 +49,9 @@
       <file leaf-file-name="index.html" pinned="false" current="true" current-in-tab="true">
         <entry file="file://$PROJECT_DIR$/index.html">
           <provider selected="true" editor-type-id="text-editor">
-            <state line="190" column="0" selection-start="6764" selection-end="6764" vertical-scroll-proportion="0.575188" vertical-offset="3114" max-vertical-offset="5544">
+            <state line="140" column="16" selection-start="4832" selection-end="4832" vertical-scroll-proportion="0.23684211" vertical-offset="2394" max-vertical-offset="6966">
               <folding>
-                <element signature="n#style#0;n#div#2;n#div#0;n#div#0;n#section#2;n#div#0;n#div#0;n#body#0;n#html#0;n#!!top" expanded="true" />
+                <element signature="n#style#0;n#h2#0;n#section#13;n#div#0;n#div#0;n#body#0;n#html#0;n#!!top" expanded="true" />
               </folding>
             </state>
           </provider>
@@ -305,13 +323,6 @@
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/lib/js/armcharts/themes/light.js">
-      <provider selected="true" editor-type-id="text-editor">
-        <state line="0" column="0" selection-start="0" selection-end="0" vertical-scroll-proportion="-0.0" vertical-offset="0" max-vertical-offset="3672">
-          <folding />
-        </state>
-      </provider>
-    </entry>
     <entry file="file://$PROJECT_DIR$/lib/js/armcharts/armchart.js">
       <provider selected="true" editor-type-id="text-editor">
         <state line="363" column="34" selection-start="192474" selection-end="192474" vertical-scroll-proportion="0.549195" vertical-offset="6227" max-vertical-offset="6858">
@@ -319,11 +330,18 @@
         </state>
       </provider>
     </entry>
+    <entry file="file://$PROJECT_DIR$/lib/js/armcharts/themes/light.js">
+      <provider selected="true" editor-type-id="text-editor">
+        <state line="0" column="0" selection-start="0" selection-end="0" vertical-scroll-proportion="-0.0" vertical-offset="0" max-vertical-offset="3672">
+          <folding />
+        </state>
+      </provider>
+    </entry>
     <entry file="file://$PROJECT_DIR$/index.html">
       <provider selected="true" editor-type-id="text-editor">
-        <state line="190" column="0" selection-start="6764" selection-end="6764" vertical-scroll-proportion="0.575188" vertical-offset="3114" max-vertical-offset="5544">
+        <state line="140" column="16" selection-start="4832" selection-end="4832" vertical-scroll-proportion="0.23684211" vertical-offset="2394" max-vertical-offset="6966">
           <folding>
-            <element signature="n#style#0;n#div#2;n#div#0;n#div#0;n#section#2;n#div#0;n#div#0;n#body#0;n#html#0;n#!!top" expanded="true" />
+            <element signature="n#style#0;n#h2#0;n#section#13;n#div#0;n#div#0;n#body#0;n#html#0;n#!!top" expanded="true" />
           </folding>
         </state>
       </provider>
