@@ -38,11 +38,36 @@
 
     <body>
         <style type="text/css">
+            body {
+                font-size: 100%;
+            }
+
             .doomed_text
             {
                 color: green;
                 font-size: 5em !important;
             }
+            .pie {
+                position: relative;
+                width		: 100%;
+                height		: 500px;
+                font-size	: 15px;
+                line-height: 200px;
+            }
+
+            .pie text {
+                font-size: 0.5em;
+                line-height: 200%;
+            }
+
+            .pie a[title="JavaScript charts"] {
+                display: none !important;
+            }
+
+            #pie-2 {
+                font-size: 80%;
+            }
+
         </style>
 
         <div class="reveal">
@@ -156,9 +181,17 @@
                     <h2 class="fragment">Экономическая выгода</h2>
                 </section>
 
+                <section data-state="pie-1">
+                    <div class="pie" id="pie-1"></div>
+                </section>
+
+                <section data-state="pie-2">
+                    <div class="pie" id="pie-2"></div>
+                </section>
+
                 <section data-background="images/friends_bg.jpg">
-                  <h2 class="fragment">Давайте дружить!</h2>
-                  <p class="fragment">contact@igrofy.com</p>
+                    <h2 class="fragment">Давайте дружить!</h2>
+                    <p class="fragment">contact@igrofy.com</p>
                 </section>
             </div>
         </div>
@@ -166,7 +199,67 @@
         <script src="lib/js/head.min.js"></script>
         <script src="js/reveal.min.js"></script>
 
+
+        <script type="text/javascript" src="/lib/js/armcharts/armchart.js"></script>
+        <script type="text/javascript" src="/lib/js/armcharts/pie.js"></script>
+        <script type="text/javascript" src="/lib/js/armcharts/themes/light.js"></script>
         <script>
+            var App = function(){};
+
+            App.prototype.runDiagram1 = function() {
+
+                var legend = new AmCharts.AmLegend({
+
+                });
+
+                var chart = AmCharts.makeChart("pie-1", {
+                    "type": "pie",
+                    "theme": "light",
+                    "dataProvider": [
+                        {"country": 'Филиппины', "part": 23},
+                        {"country": 'США', "part": 25},
+                        {"country": 'Азия', "part": 20},
+                        {"country": 'Европа', "part": 10},
+                        {"country": 'Россия', "part": 3},
+                        {"country": 'Остальное', "part": 15}
+                    ],
+                        "valueField": "part",
+                        "titleField": "country",
+                        "exportConfig":{
+                            menuItems: [{
+                                icon: '/lib/3/images/export.png',
+                                format: 'png'
+                            }]
+                        }
+                    });
+            };
+
+            App.prototype.runDiagram2 = function() {
+
+                var chart = AmCharts.makeChart("pie-2", {
+                    "type": "pie",
+                    "theme": "light",
+                    "dataProvider": [
+                        {"country": 'Страховики', "part": 9},
+                        {"country": 'Другие', "part": 14},
+                        {"country": 'Телемаркетинг', "part": 29},
+                        {"country": 'Банки', "part": 41},
+                        {"country": 'Прямые продажи', "part": 7},
+                    ],
+                    "valueField": "part",
+                    "titleField": "country",
+                    "exportConfig":{
+                        menuItems: [{
+                            icon: '/lib/3/images/export.png',
+                            format: 'png'
+                        }]
+                    }
+                });
+            };
+
+            var app = new App();
+
+
             Reveal.initialize({
                 controls: true,
                 progress: true,
@@ -191,7 +284,19 @@
                 ]
             });
 
-        </script>
+            Reveal.addEventListener( 'ready', function( event ) {
+                app.runDiagram1();
+                app.runDiagram2();
+            } );
 
+            Reveal.addEventListener( 'pie-1', function( event ) {
+                app.runDiagram1();
+            });
+
+            Reveal.addEventListener( 'pie-2', function( event ) {
+                app.runDiagram2();
+            });
+
+        </script>
     </body>
 </html>
