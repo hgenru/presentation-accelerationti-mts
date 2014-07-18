@@ -124,62 +124,62 @@
                         <span class="i-text">Для колл-центров остро стоит проблема вовлеченности</span>
                     </div>
                 </section>
-                
+
+                <style>
+                    .col-1-2 {
+                        width: 50%;
+                        float: left;
+                    }
+
+                    .col-2-2 {
+                        width: 50%;
+                        float: left;
+                    }
+
+                    .grid {
+                        overflow: hidden;
+                    }
+
+                    .mechanic h2 {
+                        margin: 0 5px;
+                    }
+
+                    .mechanic .mechanic__before {
+                        background: #bdc3c7;
+                    }
+
+                    .mechanic .mechanic__after {
+                        background: #8e44ad;
+                    }
+                </style>
+
                 <section data-background="images/black_bg.jpg">
-                    <img src="images/schema-before.svg" alt="">
+                    <div class="grid mechanic">
+                        <div class="col-1-2">
+                            <h2 class="mechanic__before">До</h2>
+                            <img src="images/schema-before.svg" alt="">
+                        </div>
+                        <div class="col-2-2">
+                            <h2 class="mechanic__after">После</h2>
+                            <img src="images/schema-after.svg" alt="">
+                        </div>
+                    </div>
                 </section>
 
-                <section data-background="images/main_bg.jpg">
-                    <img src="images/schema-after.svg" alt="">
-                </section>
-
-
-                <section data-background="images/market_all.jpg" data-state="pie-2">
+                <section data-background="images/market_rus.jpg" data-state="pie-2">
                     <p>Российский рынок</p>
                     <div class="pie" id="pie-2"></div>
                 </section>
                 
-                <section data-background="images/market_rus.jpg" data-state="pie-1">
+                <section data-background="images/market_all.jpg" data-state="pie-1">
                     <p>Мировой рынок</p>
                     <div class="pie" id="pie-1"></div>
                 </section>
 
+
                 <section data-background="images/main_bg.jpg">
                     <img src="images/product.png"/>
                 </section>
-
-<!--                 <section data-background="images/main_bg.jpg">
-                    <style>
-                      .product-item
-                      {
-                        width: 250px;
-                        display: inline-block;
-                        vertical-align: top;
-                      }
-                      .product-wrap
-                      {
-                        padding: 20px 0 0 !important;
-                        font-size: 0;
-                        letter-spacing: 0;
-                        word-spacing: 0;
-                      }
-                      .product-wrap .product-item
-                      {
-                        display: inline-block;
-                        font-size: 0.8em;
-                        letter-spacing: 1px;
-                        word-spacing: .1em;
-                        line-height: 10px;
-                        vertical-align: top;
-                      }
-                    </style>
-                    <div class="product-wrap">
-                        <div class="product-item"><img src="images/product-edu.svg" alt=""></div>
-                        <div class="product-item"><img src="images/product-social.svg" alt=""></div>
-                        <div class="product-item"><img src="images/product-leader.svg" alt=""></div>
-                        <div class="product-item"><img src="images/product_progres.svg" alt=""></div>
-                    </div>
-                </section> -->
 
                 <section data-background="images/main_bg.jpg">
                 <style>
@@ -208,7 +208,6 @@
                 </style>
                     <p>Конкуренты</p>
                     <div class="rival-wrap">
-                        <!-- <span class="i-text">Конкуренты</span> -->
                         <div class="rival">
                             <img src="images/pryaniki-logo.png"/>
                         </div>
@@ -222,7 +221,7 @@
                   <style>
                     .team_chlen
                     {
-                      width: 250px;
+                      width: 230px;
                       display: inline-block;
                       vertical-align: top;
                     }
@@ -240,26 +239,37 @@
                       letter-spacing: 1px;
                       word-spacing: .1em;
                       line-height: 10px;
-                      vertical-align: top;
+                      vertical-align: middle;
+                    }
+                    .chen_desc
+                    {
+                        display: table-cell;
+                        font-size: 0.6em !important;
+                        height: 150px;
+                        vertical-align: middle !important;
                     }
                   </style>
                   <div class="wrapper">
                     <div class="team_chlen">
                       <img src="images/esa.jpg" alt="esa"/>
                       <p>Сергей</p>
+                      <p class="chen_desc">педагог со стажем, разрабатывает действительно игрофикационных практик</p>
                     </div>
                     <div class="team_chlen">
                       <img src="images/elo_mado.jpg" alt="elo_mado"/>
                       <p>Эльвира</p>
+                      <p class="chen_desc">практикующий психолог, работает над поведенческими мотивами в игре</p>
                     </div>
-                    <br/>
+                    <!-- <br/> -->
                     <div class="team_chlen">
                       <img src="images/slggr.jpg" alt="slggr"/>
                       <p>Максим</p>
+                      <p class="chen_desc">фронтенд-разработчик, имеет опыт проведения конференций, настольных и ролевых игр</p>
                     </div>
                     <div class="team_chlen">
                       <img src="images/aserditov.jpg" alt="aserditov"/>
                       <p>Александр</p>
+                      <p class="chen_desc">инженер- разработчик, имеет большой опыт создания высоконагруженных cистем</p>
                     </div>
                   </div>
                 </section>
