@@ -289,9 +289,9 @@
         <script src="js/reveal.min.js"></script>
 
 
-        <script type="text/javascript" src="/lib/js/armcharts/armchart.js"></script>
-        <script type="text/javascript" src="/lib/js/armcharts/pie.js"></script>
-        <script type="text/javascript" src="/lib/js/armcharts/themes/light.js"></script>
+        <script type="text/javascript" src="lib/js/armcharts/armchart.js"></script>
+        <script type="text/javascript" src="lib/js/armcharts/pie.js"></script>
+        <script type="text/javascript" src="lib/js/armcharts/themes/light.js"></script>
         <script>
             var App = function(){};
 
@@ -312,6 +312,11 @@
                         {"country": 'Россия', "part": 3},
                         {"country": 'Остальное', "part": 15}
                     ],
+                    'legend': {
+                        "useGraphSettings": true,
+                        showEntries: false,
+                        valueText: '[[value]]'
+                    },
                         "valueField": "part",
                         "titleField": "country",
                         "exportConfig":{
@@ -335,7 +340,13 @@
                         {"country": 'Банки', "part": 41},
                         {"country": 'Прямые продажи', "part": 7}
                     ],
+                    'legend': {
+                        showEntries: false,
+                        valueText: '[[value]]',
+                        "position": "right"
+                    },
                     "valueField": "part",
+                    showEntries: false,
                     "titleField": "country",
                     "exportConfig":{
                         menuItems: [{
